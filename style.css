@@ -1,0 +1,112 @@
+/************** Fonts **************/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=PT+Sans+Narrow&display=swap');
+
+/************** Reset **************/
+* {
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+/************** General **************/
+:root {
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+}
+body {
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+.container {
+    position: relative;
+    width: 640px;
+    height: 478px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+
+}
+.dsk {
+    height: 478px;
+}
+.mob {
+    display: none;
+}
+.information {
+    background-color: var(--White);
+    padding: 30px;
+}
+.information h1 {
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+.information .name {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    margin-bottom: 2rem;
+
+}
+.information .desc {
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+}
+.price {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around ;
+    position: absolute;
+    top: 345px;
+    right: 100px;
+}
+.price .New-Price {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    margin-right: 20px;
+    
+}
+.price .Old-Price {
+    margin-top: 10px;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+button {
+    position: absolute;
+    top: 399px;
+    right: 36px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    padding: 15px 15px;
+    width: 252px;
+    font-weight: 700;
+}
+button:hover {
+    cursor: pointer;
+    background-color:hsl(158, 36%, 17%) ;
+    transition-duration:.5s ;
+}
+button img {
+    margin-right: 7px;
+}
